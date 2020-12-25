@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bye 2020</title>
+
+    <meta property="og:image" content="https://www.fischer-information.com/en/assets/content/images/news/2019/fischer-xmas.jpg">
+    <meta property="og:title" content="From Eric Kwon">
+    <meta property="og:description" content="Good Bye 2020">
+
+    <link rel="shortcut icon" href="https://icons-for-free.com/iconfiles/png/512/candy+canes+candy+stick+christmas+sweet+icon-1320184382978024186.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <style>
+        * {
+            font-family: 'Gamja Flower', cursive;
+        }
+
+        body {
+            background-color: #9b070f;
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+
+            background-image: url(https://pngimg.com/uploads/envelope/envelope_PNG18366.png);
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+
+            background-image: url(https://i.guim.co.uk/img/media/5eddca8a2ad694f86c7fd7ef9d2fe0c7081b6d2b/0_381_5750_3452/master/5750.jpg?width=1065&quality=85&auto=format&fit=max&s=28fd12408d7de77225e524eb7b0e0b49);
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0 auto;
+
+            border-radius: 100px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color: white;
+            text-align: center;
+        }
+
+        .msg-box {
+            background-color: ivory;
+
+            width: 400px;
+            margin: auto;
+
+            color: brown;
+
+            padding: 30px;
+
+            font-size: 20px;
+            line-height: 30px;
+
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .msg-box {
+                width: 300px;
+                padding: 20px;
+            }
+            .rtan {
+                width: 150px;
+                height: 150px;
+            }
+            .h1 {
+                font-size: 28px;
+            }
+
+            .envelope {
+                margin: 150px auto 0px auto;
+            }
+        }
+    </style>
+
+    <script>
+
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+
+        function go_rtan() {
+            alert("Stay safe. Stay healthy.")
+            window.location.href='http://www.google.ca'
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">Open the envelope!</h2>
+    </div>
+
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+        <h1>수고 많았어</h1>
+        <div class="msg-box">
+            친구들에게. <br />
+            올해 이런저런 일이 많았는데 <br />
+            너희 덕분에 하나도 힘들지 않았어 <br />
+            내년에도 우리 우정 변치말자 <br />
+            연말에 다 같이 못 봐서 아쉽다 <br />
+            <p class="from">2020.12.25 Eric Kwon</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
